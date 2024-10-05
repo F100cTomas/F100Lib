@@ -4,11 +4,4 @@ build/
 # Visual Studio Code
 .vscode/
 
-# Visual Studio
-.vs/
-CMakeSettings.json
-out/
-
-# Clangd
 .cache/
-compile_commands.json
