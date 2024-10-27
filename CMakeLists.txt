@@ -11,3 +11,7 @@ file(GLOB_RECURSE SOURCES "src/*.cpp" "src/*.c")
 add_library(F100Lib STATIC ${SOURCES})
 
 target_include_directories(F100Lib PUBLIC include)
+
+add_executable(F100Lib-test .scripts/testing/main.cpp)
+target_link_libraries(F100Lib-test PRIVATE F100Lib)
+add_test(NAME F100Lib-test COMMAND F100LibTests)
