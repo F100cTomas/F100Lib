@@ -9,7 +9,4 @@ static std::ostream& operator<<(std::ostream& stream, SizedStringRef s) {
 }
 
 int main() {
-  SizedStringRef s{30};
-  s << "Hej hej hej, ja jsem g...\n";
-  std::cout << s;
 }
